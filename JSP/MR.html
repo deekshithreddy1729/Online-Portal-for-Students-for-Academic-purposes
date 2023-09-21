@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+	header {
+    background-color: #2899D1;
+    padding: 2px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+input[type=text],input[type=date], select {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+table {
+    font-family: arial, sans-serif;
+
+    width: 40%;
+}
+input[type=submit] {
+    width: 20%;
+    background-color: #2899D1;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #2899D1;
+}
+
+div.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+<title>MEDICAL REGISTRATION</title>
+</head>
+<body>
+<center>
+<header><h3>Medical Registration</h3></header>
+<form action="MR.jsp">
+<table>
+<tr><th>Roll No</th><td><input type = "text" name="mroll" required></td></tr>
+<tr><th>Weight(in kg)</th><td><input type = "text" name="mweight" required></td></tr>
+<tr><th>Height(in cm)</th><td><input type = "text" name="mheight" required></td></tr>
+
+<tr><th>Blood Group</th><td><select name="mblood">
+<option>A+ve</option>
+<option>A-ve</option>
+<option>B+ve</option>
+<option>B-ve</option>
+<option>O+ve</option>
+<option>O-ve</option>
+<option>AB+ve</option>
+<option>AB-ve</option>
+</select></td></tr>
+<tr><th>Disability</th><td><select name="mdisability">
+<option>Yes</option>
+<option>No</option>
+</select></td></tr>
+<tr><th>Drug Allergy</th><td><select name="mdrug">
+<option>Yes</option>
+<option>No</option>
+</select></td></tr>
+<tr><th>Past Illness</th><td><input type = "text" name="mpast" required></td></tr>
+</table><br>
+<h3>Vaccination Dates</h3>
+<table>
+<tr><th>Typhoid</th><td><input type = "date" name="mtyphoid" required></td></tr>
+<tr><th>Hepatitis</th><td><input type = "date" name="mhepatitis" required></td></tr>
+<tr><th>MMR</th><td><input type = "date" name="mmmr" required></td></tr>
+<tr><th>Chicken Pox</th><td><input type = "date" name="mchickenpox" required></td></tr><br><br>
+</table>
+<input type="submit" value="Submit">
+</form>
+</center>
+</body>
+</html>
